@@ -1,0 +1,22 @@
+#simple program to calculate distance= (acceleration*time^2)/2
+print ("A simple program calculating the relation between distance, acceleration, and time ")
+import math
+acceleration=time=distance= float(0)
+val=input ("enter 1 to find distance, 2 to find acceleration and 3 to find time")
+val1=val2=val3=val
+if val1==1:
+    acceleration= input ("Enter acceleration in m/s ")
+    time= input ("Enter time in seconds ")
+    distance=(acceleration*(time*time)/2
+    print ("the distance is ", distance,"m")
+elif val2==2:
+    distance= input ("Enter the distance in metres ")
+    time= input ("Enter the time in seconds ")
+    acceleration= ((2*distance)/(time*time))
+    print("the rate of acceleration is ",acceleration,"m/s")
+elif val3==3:
+    distance= input ("Enter the distance in metres ")
+    acceleration= input ("Enter the rate of acceleration in m/s")
+    time= (sqrt((2*distance)/acceleration))
+    print("the time taken to reach ",distance,"m at ", acceleration,"m/s is ", time,"seconds")
+else print("You have entered an incorrect value, closing program... ")
